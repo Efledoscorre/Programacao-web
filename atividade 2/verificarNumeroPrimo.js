@@ -4,7 +4,7 @@ function Primo(n){
     if (n === 2) return true;
     if (n % 2 === 0) return false;
     if (n < 1 ) return false;
-
+    if (n == 1) return false;
         
     while (i * i <= n) {  
       if (n % i === 0) return false;
@@ -15,7 +15,7 @@ function Primo(n){
   }
 
 console.log(Primo(0));      
-console.log(Primo(1));      //impossivel dar false, ele divide por 1 e por ele mesmo. Não consegui botar pra ser false
+console.log(Primo(1));    
 console.log(Primo(2));      
 console.log(Primo(3));      
 console.log(Primo(7));      
