@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nova mensagem</title>
+</head>
+<body>
+    <h1>nova mensagem</h1>
+    <form action="/messages/create" method="post">
+        <label>titulo:</label>
+        <input type="text" name="title" required>
+        <label>conteudo:</label>
+        <textarea name="content" required></textarea>
+        <button type="submit">enviar</button>
+    </form>
+    <a href="/messages">voltar ao mural</a>
+</body>
+</html>

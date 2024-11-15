@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mural de mensagens</title>
+</head>
+<body>
+    <h1>mural de mensagens</h1>
+    <ul>
+        <% messages.forEach(message => { %>
+            <li><a href="/messages/<%= message.id %>"><%= message.title %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/messages/create">nova mensagem</a> | <a href="/logout">logout</a>
+</body>
+</html>
